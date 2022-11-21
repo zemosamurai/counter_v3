@@ -2,26 +2,25 @@ body {
     background-color: #292C35;
     font-size: 40px;
     font-weight: 700;
-    color: #292C35;
+    color: #63DAFC;
 }
 
 .wrapper {
+    margin: 70px auto 0;
     text-align: center;
     border: #63DAFC 4px solid;
     border-radius: 15px;
-    width: 400px;
-    padding: 50px 0px;
-    margin: 100px auto 0px;
+    width: 450px;
+    padding: 50px 0;
 }
 
 .count {
-    width: 350px;
-    height: 80px;
+    width: 370px;
+    height: 50px;
     margin: 0 auto;
-    padding: 30px 0px;
+    padding: 60px 0;
     border-radius: 15px;
-
-    background-color: #63DAFC;
+    border: #63DAFC 4px solid;
 
 }
 
@@ -31,10 +30,20 @@ body {
     font-weight: 800;
 }
 
+.errorText {
+    color: #ff004d;
+    font-size: 26px;
+}
+
+.editSet {
+    color: #63DAFC;
+    font-size: 26px;
+}
+
 .btnWrapper {
-    padding: 20px 0px;
-    width: 350px;
-    margin: 20px auto 0px;
+    padding: 30px 0;
+    width: 370px;
+    margin: 20px auto 0;
     display: flex;
     justify-content: center;
     column-gap: 30px;
@@ -54,7 +63,7 @@ body {
 
 .btn:hover {
     color: white;
-    box-shadow: 0px 4px 10px #63DAFC;
+    box-shadow: 0 4px 10px #63DAFC;
 }
 
 .btn:disabled {
