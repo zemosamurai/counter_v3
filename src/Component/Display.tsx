@@ -6,10 +6,8 @@ type DisplayPropsType = {
     maxValue: number
 }
 
-export const Display = (props: DisplayPropsType) => {
-    const {count, maxValue} = props
+export const Display = ({count, maxValue}: DisplayPropsType) => {
     const style = s.count + (count === maxValue ? ' ' + s.error : '')
-
     return <div className={style}>{count}</div>
 };
 
