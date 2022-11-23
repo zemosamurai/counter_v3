@@ -7,9 +7,7 @@ type ButtonPropsType = {
     style: string
 }
 
-export const Button = (props: ButtonPropsType) => {
-    const {name, callback, disable, style} = props
-
+export const Button = ({name, callback, disable, style}: ButtonPropsType) => {
     return (
         <button className={style} disabled={disable} onClick={callback}>{name}</button>
     );
