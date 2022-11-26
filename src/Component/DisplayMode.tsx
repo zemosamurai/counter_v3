@@ -12,8 +12,8 @@ export const DisplayMode = ({maxValue, minValue, setMinValue, setMaxValue}: Disp
     const errorMax = maxValue <= minValue
     const error = errorMax || minValue < 0
 
-    const onChangeMaxHandler = (e: ChangeEvent<HTMLInputElement>) => setMaxValue(+e.currentTarget.value)
-    const onChangeStartHandler = (e: ChangeEvent<HTMLInputElement>) => setMinValue(+e.currentTarget.value)
+    const onChangeMaxHandler = (e: ChangeEvent<HTMLInputElement>) => setMaxValue(e.currentTarget.valueAsNumber)
+    const onChangeStartHandler = (e: ChangeEvent<HTMLInputElement>) => setMinValue(e.currentTarget.valueAsNumber)
 
     return (
         <div className={s.count}>
